@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="main-heading"> STOPWATCH WEB APP</h1>
+  <div class="mobile-frame">
+    <h2 class="app-title">STOPWATCH</h2>
+    <div class="display">
+      <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+    </div>
+    <div class="buttons">
+      <button id="start-stop-btn" class="btn" onclick="startStop()">Start</button>
+      <button class="btn" onclick="lap()">Lap</button>
+      <button class="btn" onclick="reset()">Reset</button>
+    </div>
+    <div class="laps">
+      <h3>Laps</h3>
+      <ul id="lap-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
